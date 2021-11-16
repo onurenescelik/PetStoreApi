@@ -58,6 +58,12 @@ public class GetRequest11TestData extends JsonPlaceHolderTestBase {
         //   --object mapper
         //   --pojo class ile birlite map
 
+        HashMap<String, Object> actualData=response.as(HashMap.class);
+        System.out.println(actualData);
+
+        Assert.assertEquals(expectedData.get("userId"),actualData.get("userId"));
+        Assert.assertEquals(expectedData.get("title"),actualData.get("title"));
+        Assert.assertEquals(expectedData.get("completed"),actualData.get("completed"));
 
     }
 }
