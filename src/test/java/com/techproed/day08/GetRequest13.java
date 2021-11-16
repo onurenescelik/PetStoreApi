@@ -40,6 +40,9 @@ public class GetRequest13 extends DummyTestBase {
 
         response.prettyPrint();
 
+        HashMap<String,Object>actualDataMap=response.as(HashMap.class);
+        System.out.println();
+
 
 
 
