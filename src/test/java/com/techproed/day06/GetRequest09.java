@@ -53,6 +53,8 @@ public class GetRequest09 extends DummyTestBase {
 
     Assert.assertTrue(jsonPath.getList("data.employee_age").containsAll(list));
 
+ // Assert.assertTrue(jsonPath.getList("data.employee_age").stream().anyMatch(t-> t.equals(21) && t.equals(61) && t.equals(23))); olmadi
+
 }
 
 }
