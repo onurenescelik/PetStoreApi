@@ -1,5 +1,6 @@
 package com.techproed.testData;
 
+import org.json.JSONObject;
 import org.junit.Test;
 
 import java.util.ArrayList;
@@ -108,6 +109,20 @@ public class DummyTestData {
 
 
 
+    }
+    public JSONObject setUpTestAndRequestData() {
+
+        JSONObject bookingdates = new JSONObject();
+        bookingdates.put("checkin", "2021-01-05");
+        bookingdates.put("checkout", "2021-01-10");
+
+        JSONObject expectedRequest = new JSONObject();
+        expectedRequest.put("firstname", "Batch30");
+        expectedRequest.put("lastname", "bitti");
+        expectedRequest.put("totalprice", 123);
+        expectedRequest.put("depositpaid", false);
+        expectedRequest.put("bookindates", bookingdates);
+        return expectedRequest;
     }
 
 
