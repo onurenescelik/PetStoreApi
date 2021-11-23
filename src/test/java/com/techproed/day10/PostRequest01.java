@@ -40,7 +40,7 @@ olduğunu test edin
         HashMap<String,Object>expectedDataMap=obje.setUpExpectedData();
 
         Response response=given().
-                accept("application/json").
+                contentType("application/json").
                 spec(spec03).auth().basic("admin","password123").
                 body(requestBody).
                 when().
