@@ -111,6 +111,14 @@ public class DummyTestData {
 
     }
 
+    public JSONObject setUpDeleteExpectedData(){
+        JSONObject delete=new JSONObject();
+        delete.put("status","success");
+        delete.put("data","2");
+        delete.put("message","Successfully! Record has been deleted");
+        return delete;
+    }
+
 
 
 
